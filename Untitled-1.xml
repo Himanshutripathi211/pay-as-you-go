@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and page title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Cost Calculator</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page header -->
+    <h1>Pay-as-you-go vs. Reserved Instances Calculator</h1>
+    
+    <!-- Form to capture user input -->
+    <form id="costForm">
+        <!-- Dropdown for selecting VM size -->
+        <label for="vm_size">VM Size:</label>
+        <select id="vm_size" name="vm_size">
+            <option value="Standard_B1s">Standard_B1s</option>
+            <option value="Standard_B2s">Standard_B2s</option>
+        </select>
+        <br>
+        
+        <!-- Dropdown for selecting region -->
+        <label for="region">Region:</label>
+        <select id="region" name="region">
+            <option value="eastus">East US</option>
+            <option value="westus">West US</option>
+        </select>
+        <br>
+        
+        <!-- Input for usage hours per month -->
+        <label for="usage_hours">Usage Hours per Month:</label>
+        <input type="number" id="usage_hours" name="usage_hours" placeholder="e.g., 720">
+        <br>
+        
+        <!-- Dropdown for selecting pricing term -->
+        <label for="term">Pricing Term:</label>
+        <select id="term" name="term">
+            <option value="PAYG">Pay-as-you-go</option>
+            <option value="1yr">1-Year Reserved</option>
+            <option value="3yr">3-Year Reserved</option>
+        </select>
+        <br>
+        
+        <!-- Submit button -->
+        <button type="submit">Calculate</button>
+    </form>
+    
+    <!-- Div to display calculation results -->
+    <div id="result"></div>
+    
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

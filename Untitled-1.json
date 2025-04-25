@@ -1,0 +1,26 @@
+{
+  "eastus": {
+    "Standard_B1s": {
+      "payg": 0.012,
+      "reserved_1yr": 0.010,
+      "reserved_3yr": 0.008
+    },
+    "Standard_B2s": {
+      "payg": 0.024,
+      "reserved_1yr": 0.020,
+      "reserved_3yr": 0.016
+    }
+  },
+  "westus": {
+    "Standard_B1s": {
+      "payg": 0.013,
+      "reserved_1yr": 0.011,
+      "reserved_3yr": 0.009
+    },
+    "Standard_B2s": {
+      "payg": 0.026,
+      "reserved_1yr": 0.022,
+      "reserved_3yr": 0.018
+    }
+  }
+}
